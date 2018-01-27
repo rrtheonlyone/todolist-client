@@ -17,7 +17,7 @@ import { Router, Route, Link } from 'react-router-dom'
 import history from './history';
 
 const client = new ApolloClient({
-  link: new HttpLink({uri: "http://localhost:3000/graphql"}),
+  link: new HttpLink({uri: "https://evening-waters-26594.herokuapp.com/graphql"}),
   cache: new InMemoryCache(),
   dataIdFromObject: o => o.id
 });
